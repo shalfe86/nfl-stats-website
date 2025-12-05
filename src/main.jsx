@@ -11,18 +11,19 @@ import {
 
 // --- 1. CONFIGURATION ---
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY_HERE",
+  apiKey: "AIzaSyD3-r1VdO69UNTdwUQOxACw7QAU8i996F0",
   authDomain: "nfl-stats-lab.firebaseapp.com",
   projectId: "nfl-stats-lab",
   storageBucket: "nfl-stats-lab.firebasestorage.app",
-  messagingSenderId: "...",
-  appId: "..."
+  messagingSenderId: "198834786644",
+  appId: "1:198834786644:web:a0e1976f999d27e800f8c1",
+  measurementId: "G-0D25D1MJJ3"
 };
 
 // Initialize Firebase
 let app, auth, db;
 try {
-  if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "PASTE_YOUR_API_KEY_HERE") {
+  if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "AIzaSyD3-r1VdO69UNTdwUQOxACw7QAU8i996F0") {
     app = initializeApp(firebaseConfig);
     auth = getAuth(app);
     db = getFirestore(app);
